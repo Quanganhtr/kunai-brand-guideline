@@ -132,7 +132,7 @@ export default function IconSection() {
   icons.forEach((icon, i) => cols[i % 3].push(icon));
 
   return (
-    <section id="voice" className="px-12 py-16 border-b border-white/10">
+    <section id="voice" className="px-4 py-6 lg:px-12 lg:py-16 border-b border-white/10">
       <p className="text-xs font-mono tracking-widest text-white/30 uppercase mb-3">04 — Icons</p>
       <h2 className="text-3xl font-semibold mb-10">Icon Set</h2>
 

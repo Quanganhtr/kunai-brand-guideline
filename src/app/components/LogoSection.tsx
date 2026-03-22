@@ -167,7 +167,7 @@ function LogoCard({ src, alt, bg, bgHex, label, dark, className = "" }: CardProp
 
 export default function LogoSection() {
   return (
-    <section id="logo" className="px-12 py-16 border-b border-white/10">
+    <section id="logo" className="px-4 py-6 lg:px-12 lg:py-16 border-b border-white/10">
       <p className="text-xs font-mono tracking-widest text-white/30 uppercase mb-3">01 — Logo</p>
       <h2 className="text-3xl font-semibold mb-10">Logo Usage</h2>
 

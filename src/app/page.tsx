@@ -62,7 +62,7 @@ export default function Home() {
         <LogoSection />
 
         {/* Colors */}
-        <section id="colors" className="px-12 py-16 border-b border-white/10">
+        <section id="colors" className="px-4 py-6 lg:px-12 lg:py-16 border-b border-white/10">
           <SectionLabel>02 — Color</SectionLabel>
           <h2 className="text-3xl font-semibold mb-10">Color Palette</h2>
           <div className="grid grid-cols-2 xl:grid-cols-4 gap-4">
@@ -83,7 +83,7 @@ export default function Home() {
         </section>
 
         {/* Typography */}
-        <section id="typography" className="px-12 py-16 border-b border-white/10">
+        <section id="typography" className="px-4 py-6 lg:px-12 lg:py-16 border-b border-white/10">
           <SectionLabel>03 — Typography</SectionLabel>
           <div className="flex items-start justify-between mb-2">
             <h2 className="text-3xl font-semibold">Type Scale</h2>
