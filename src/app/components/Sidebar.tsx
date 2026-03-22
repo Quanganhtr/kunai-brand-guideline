@@ -1,10 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import Lottie from "lottie-react";
+import Lottie, { LottieRefCurrentProps } from "lottie-react";
+import { useRef, useEffect } from "react";
 import backgroundAnimation from "../../../public/background.json";
 
 const brandGreen = "#00FA64";
+
+function BgLottie() {
+  const lottieRef = useRef<LottieRefCurrentProps>(null);
+  useEffect(() => { lottieRef.current?.setSpeed(0.25); }, []);
+  return <Lottie lottieRef={lottieRef} animationData={backgroundAnimation} loop autoplay className="w-full h-auto" />;
+}
 
 const navLinks = [
   { href: "logo",       label: "Logo",       number: "01" },
@@ -59,7 +66,7 @@ export default function Sidebar({
             <div style={{ height: 156, background: '#0A0A0A' }} />
             <div style={{ height: 156, background: 'linear-gradient(to bottom, #0A0A0A, transparent)' }} />
           </div>
-          <Lottie animationData={backgroundAnimation} loop autoplay speed={0.25} className="w-full h-auto" />
+          <BgLottie />
         </div>
 
         {/* Content */}
