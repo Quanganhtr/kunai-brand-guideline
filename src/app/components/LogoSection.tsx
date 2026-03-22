@@ -72,7 +72,7 @@ async function handleExportPNG(src: string, filename: string, isSymbol: boolean,
   const logoW   = isSymbol ? 600 : 1080;
 
   const res = await fetch(src);
-  const svgText = prepareSvg(await res.text(), bgHex, darkFill);
+  const svgText = createExportSvg(await res.text(), isSymbol, bgHex, darkFill);
   const blob = new Blob([svgText], { type: "image/svg+xml" });
   const url = URL.createObjectURL(blob);
 
