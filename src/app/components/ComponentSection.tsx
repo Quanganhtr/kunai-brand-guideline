@@ -64,7 +64,7 @@ function LetsGoButton() {
     <button
       onMouseEnter={handleEnter}
       onMouseLeave={handleLeave}
-      className="flex items-center gap-4 px-6 h-14 border bg-[#0A0A0A] font-semibold text-sm font-mono transition-transform duration-150 active:scale-[1.8] scale-[2]"
+      className="flex items-center gap-4 px-6 h-14 border bg-[#0A0A0A] font-semibold text-sm font-mono transition-transform duration-150 active:scale-[0.9] lg:active:scale-[1.8] lg:scale-[2]"
       style={{ color: brandGreen, borderRadius: 999, borderColor: "#333" }}
     >
       {text}

@@ -87,7 +87,7 @@ export default function Home() {
           <SectionLabel>03 — Typography</SectionLabel>
           <div className="flex items-start justify-between mb-2">
             <h2 className="text-3xl font-semibold">Type Scale</h2>
-            <FontDownloadButton />
+            <span className="hidden lg:block"><FontDownloadButton /></span>
           </div>
           <p className="text-white/50 mb-10 text-sm">Kunai Pro — a geometric sans-serif with warmth and precision.</p>
           <div className="flex flex-col divide-y divide-white/10">

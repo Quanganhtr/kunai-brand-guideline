@@ -41,7 +41,7 @@ export default function Sidebar({
         <div className="flex items-center justify-between px-6 h-14">
           <Image src="/logo-symbol.svg" alt="Kunai" width={16} height={20} priority />
           <nav className="flex items-center gap-6">
-            {navLinks.map((link) => {
+            {navLinks.filter((link) => link.href !== "logo").map((link) => {
               const isActive = active === link.href;
               return (
                 <button
